@@ -6,10 +6,15 @@ $(document).ready(function(){
     event.prevenDefault;
     var userName = $('#user-input').val();
     getRepos(userName, apiKey).done(function(response){
-      console.log(response);
       $('.name').text(userName);
       $('.blank').hide();
       $('#example').hide();
+      $('.added').remove();
+      $('#empty').hide();
+      console.log(response.length);
+      if(response.length===0){
+        $('#empty').show();
+      }
       for(var i=0; i<response.length; i++){
         var repoName = response[i].name;
         var description = response[i].description;
