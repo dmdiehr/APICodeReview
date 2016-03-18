@@ -3,11 +3,18 @@ $yellow: #ffff00;*/
 
 .repo {
   float: left;
-  width: 200px;
+  width: 220px;
   height: 300px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: lightblue;
   padding: 20px;
   margin-right: 20px;
+}
+
+#display {
+  display: none;
+}
+.blank {
+  font-size: .3em;
 }
