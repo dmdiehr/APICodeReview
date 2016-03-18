@@ -6,7 +6,7 @@ $(document).ready(function(){
     event.prevenDefault;
     var userName = $('#user-input').val();
     getRepos(userName, apiKey).done(function(response){
-      console.log(JSON.stringify(response));
+      console.log(response);
       $('.name').text(userName);
       $('.blank').hide();
       $('#example').hide();
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
         $('#display').append(
 
-          "<div class='repo'><h4>"+repoName+"</h4><p><strong>Description: </strong>"+description+"</p><p class='date'><strong>Created: </strong>"+created+"</p><p class='date'><strong>Updated: </strong>"+updated+"</p><a href='"+anchor+"' target='_blank'>See Repo</a></div>"
+          "<div class='repo added'><h4>"+repoName+"</h4><p><strong>Description: </strong>"+description+"</p><p class='date'><strong>Created: </strong>"+created+"</p><p class='date'><strong>Updated: </strong>"+updated+"</p><a href='"+anchor+"' target='_blank'>See Repo</a></div>"
         );
       }
       $('#display').show();
@@ -28,6 +28,7 @@ $(document).ready(function(){
       if(userName.length>0){
         $('.name').text(userName);
       }
+      $('.added').remove();
       $('.blank').show();
       $('#example').show();
       $('#display').show();

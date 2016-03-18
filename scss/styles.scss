@@ -1,13 +1,13 @@
-/*$gray : #d3d3d3;
-$yellow: #ffff00;*/
+$gray : #d3d3d3;
+$blue : lightblue;
 
 .repo {
   float: left;
   width: 220px;
   height: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid $gray;
   border-radius: 10px;
-  background-color: lightblue;
+  background-color: $blue;
   padding: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
