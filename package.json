@@ -34,5 +34,5 @@
   "bugs": {
     "url": "https://github.com/dmdiehr/APICodeReview/issues"
   },
-  "description": ""
+  "description": "This is a very simple web app that allows the uses to search for GitHub usernames and returns some basic facts about the repositories associated with that username."
 }

@@ -12,11 +12,7 @@ This is a very simple web app that allows the uses to search for GitHub username
 
 * _Clone this repository_
 * _Navigate to the project folder in the terminal_
-* _Type: npm init_
-* _Approve the standard settings_
 * _Type: npm install_
-* _Type: bower init_
-* _Approve the standard settings_
 * _Type: bower install_
 * _Type: gulp build_
 * _Type: gulp serve_
